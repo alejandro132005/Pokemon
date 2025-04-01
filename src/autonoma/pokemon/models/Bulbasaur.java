@@ -1,12 +1,13 @@
-
 package autonoma.pokemon.models;
 /**
  * Modelo que representa un Pokemon que hereda de Pokemon e implementa PokemonPlanta
+ * Representa los ataques y caracteristicas de un Pokemon de tipo planta.
+ * 
  * @author Alejandro
  * @since 20250331
  * @version 1.0
  */
-public class Bulbasaur extends Pokemon implements PokemonPlanta{
+public class Bulbasaur extends Pokemon implements PokemonPlanta {
     /**
      * Inicializa los atributos de la clase Bulbasaur
      *
@@ -25,7 +26,7 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta{
     */
     @Override
     public String atacarPlacaje() {
-        return "Soy Balbasaur y ataco con Placaje";
+        return "Soy Bulbasaur y ataco con Placaje";
     }
 
     /**
@@ -34,7 +35,7 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta{
     */
     @Override
     public String atacarArañazo() {
-        return "Soy Balbasaur y ataco con Arañazo";
+        return "Soy Bulbasaur y ataco con Arañazo";
     }
     
     /**
@@ -43,7 +44,7 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta{
     */
     @Override
     public String atacarMordisco() {
-        return "Soy Balbasaur y ataco con Mordisco";
+        return "Soy Bulbasaur y ataco con Mordisco";
     }
 
     /**
@@ -52,7 +53,7 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta{
     */
     @Override
     public String atacarParalizar() {
-        return "Soy Balbasaur y ataco con Paralizar";
+        return "Soy Bulbasaur y ataco con Paralizar";
     }
 
     /**
@@ -61,7 +62,7 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta{
     */
     @Override
     public String atacarDrenaje() {
-        return "Soy Balbasaur y ataco con Drenaje";
+        return "Soy Bulbasaur y ataco con Drenaje";
     }
 
     /**
@@ -70,7 +71,7 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta{
     */
     @Override
     public String atacarHojaAfilada() {
-        return "Soy Balbasaur y ataco con HojaAfilada";
+        return "Soy Bulbasaur y ataco con Hoja Afilada";
     }
     
     /**
@@ -79,6 +80,6 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta{
     */
     @Override
     public String atacarLatigoCepa() {
-        return "Soy Balbasaur y ataco con LatigoCepa";
+        return "Soy Bulbasaur y ataco con Latigo Cepa";
     }
 }

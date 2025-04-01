@@ -1,43 +1,46 @@
 package autonoma.pokemon.models;
 
 /**
- * Modelo que permite representar un pokemon
+ * Clase abstracta que representa un Pokémon y define sus atributos y métodos básicos.
+ * Sirve como modelo base para otros tipos de Pokémon.
+ * 
  * @author Alejandro
  * @since 20250331
  * @version 1.0
  */
 public abstract class Pokemon {
     
-    //Atributos
+    // Atributos
     /**
-    * numero de pokedex 
-    */
+     * Número de la Pokédex del Pokémon.
+     */
     private String numPokedex;
     
     /**
-    * nombre del pokemon
-    */
+     * Nombre del Pokémon.
+     */
     private String nombre;
     
     /**
-    * peso del pokemon
-    */
+     * Peso del Pokémon.
+     */
     private float peso;
     
     /**
-    * temporada del pokemon 
-    */
+     * Temporada en la que aparece el Pokémon.
+     */
     private String temporada;
 
-    // metodo constructor
+    // Constructor
     
     /**
-     * Inicializa los atributos de la clase 
-     * @param numPokedex
-     * @param nombre
-     * @param peso
-     * @param temporada
-    */
+     * Constructor que inicializa los atributos principales del Pokémon.
+     * 
+     * @param numPokedex Número de la Pokédex
+     * @param nombre     Nombre del Pokémon
+     * @param peso       Peso del Pokémon
+     * @param temporada  Temporada en la que aparece
+     */
     public Pokemon(String numPokedex, String nombre, float peso, String temporada) {
         this.numPokedex = numPokedex;
         this.nombre = nombre;
@@ -45,88 +48,100 @@ public abstract class Pokemon {
         this.temporada = temporada;
     }
     
+    // Métodos getter y setter
+    
     /**
-     * Retorna el numero de pokedex
-     * @return numPokedex
-    */
+     * Obtiene el número de la Pokédex del Pokémon.
+     * 
+     * @return Número de la Pokédex
+     */
     public String getNumPokedex() {
         return numPokedex;
     }
 
     /**
-     * Modifica el numero de  pokedex
-     * @param numPokedex
-    */    
+     * Establece el número de la Pokédex del Pokémon.
+     * 
+     * @param numPokedex Número de la Pokédex
+     */    
     public void setNumPokedex(String numPokedex) {
        this.numPokedex = numPokedex;
     }
 
     /**
-     * Retorna el nombre del pokemon
-     * @return nombre
-    */
+     * Obtiene el nombre del Pokémon.
+     * 
+     * @return Nombre del Pokémon
+     */
     public String getNombre() {
         return nombre;
     }
 
     /**
-     * Modifica el nombre del pokemon
-     * @param nombre
-    */
+     * Establece el nombre del Pokémon.
+     * 
+     * @param nombre Nombre del Pokémon
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     
     /**
-     * Retorna el peso del pokemon
-     * @return peso
-    */
+     * Obtiene el peso del Pokémon.
+     * 
+     * @return Peso del Pokémon
+     */
     public float getPeso() {
         return peso;
     }
     
-    
     /**
-     * Modifica el peso del pokemon
-     * @param peso
-    */
+     * Establece el peso del Pokémon.
+     * 
+     * @param peso Peso del Pokémon
+     */
     public void setPeso(float peso) {
         this.peso = peso;
     }
     
     /**
-     * Retorna la temporada del pokemon
-     * @return temporada
-    */
+     * Obtiene la temporada en la que aparece el Pokémon.
+     * 
+     * @return Temporada del Pokémon
+     */
     public String getTemporada() {
         return temporada;
     }
     
     /**
-     * Modifica la temporada del pokemon
-     * @param temporada
-    */
+     * Establece la temporada en la que aparece el Pokémon.
+     * 
+     * @param temporada Temporada del Pokémon
+     */
     public void setTemporada(String temporada) {
         this.temporada = temporada;
     }
     
+    // Métodos abstractos
+    
     /**
-     * Modela el metodo de atacar placaje
-     * @return String 
-    */
+     * Define el ataque Placaje que debe implementar cada Pokémon.
+     * 
+     * @return Descripción del ataque Placaje
+     */
     public abstract String atacarPlacaje();
     
     /**
-     * Modela el metodo de atacar arañazo
-     * @return String 
-    */
-    
+     * Define el ataque Arañazo que debe implementar cada Pokémon.
+     * 
+     * @return Descripción del ataque Arañazo
+     */
     public abstract String atacarArañazo();
     
-     /**
-     * Modela el metodo de atacar mordisco
-     * @return String 
-    */
-    
+    /**
+     * Define el ataque Mordisco que debe implementar cada Pokémon.
+     * 
+     * @return Descripción del ataque Mordisco
+     */
     public abstract String atacarMordisco();
 }

@@ -1,84 +1,94 @@
-
 package autonoma.pokemon.models;
+
 /**
- * Modelo que representa un Pokemon que hereda de Pokemon e implementa PokemonElectrico
- * @author Alejandro 
+ * Clase que representa a Pikachu, un Pokémon que hereda de la clase base Pokemon
+ * e implementa la interfaz PokemonElectrico.
+ * 
+ * @author Alejandro
  * @since 20250331
  * @version 1.0
  */
 public class Pikachu extends Pokemon implements PokemonElectrico {
+
     /**
-     * Inicializa los atributos de la clase Pikakhu
+     * Constructor que inicializa los atributos de Pikachu.
      *
-     * @param     nombre    
-     * @param     numPokedex
-     * @param     peso
-     * @param     temporada
-    */
+     * @param numPokedex Número en la Pokédex
+     * @param nombre     Nombre del Pokémon
+     * @param peso       Peso del Pokémon
+     * @param temporada  Temporada en la que aparece
+     */
     public Pikachu(String numPokedex, String nombre, float peso, String temporada) {
         super(numPokedex, nombre, peso, temporada);
     }
 
     /**
-     * Metodo abstracto atacarPlacaje
-     * @return String
-    */
+     * Realiza el ataque Placaje.
+     * 
+     * @return Descripción del ataque
+     */
     @Override
     public String atacarPlacaje() {
-        return "soy pikachu y estoy atacando con placaje";
+        return "Soy Pikachu y estoy atacando con Placaje";
     }
 
     /**
-     * Metodo abstracto atacarArañazo
-     * @return String
-    */
+     * Realiza el ataque Arañazo.
+     * 
+     * @return Descripción del ataque
+     */
     @Override
     public String atacarArañazo() {
-        return "soy pikachu y estoy atacando con arañazo";
+        return "Soy Pikachu y estoy atacando con Arañazo";
     }
 
     /**
-     * Metodo abstracto atacarMordisco
-     * @return String
-    */
+     * Realiza el ataque Mordisco.
+     * 
+     * @return Descripción del ataque
+     */
     @Override
     public String atacarMordisco() {
-        return "soy pikachu y estoy atacando con mordisco";
+        return "Soy Pikachu y estoy atacando con Mordisco";
     }
 
     /**
-     * Metodo abstracto atacarImpactoTrueno
-     * @return String
-    */
+     * Realiza el ataque Impacto Trueno.
+     * 
+     * @return Descripción del ataque
+     */
     @Override
     public String atacarImpacTrueno() {
-        return "soy pikachu y estoy atacando con immpacto de trueno";
+        return "Soy Pikachu y estoy atacando con Impacto Trueno";
     }
 
     /**
-     * Metodo abstracto atacarPunioFuego
-     * @return String
-    */
+     * Realiza el ataque Puño Trueno.
+     * 
+     * @return Descripción del ataque
+     */
     @Override
     public String atacarPunioTrueno() {
-        return "soy pikachu y estoy atacando con puño de tueno";
+        return "Soy Pikachu y estoy atacando con Puño Trueno";
     }
 
     /**
-     * Metodo abstracto atacarRayo
-     * @return String
-    */
+     * Realiza el ataque Rayo.
+     * 
+     * @return Descripción del ataque
+     */
     @Override
     public String atacarRayo() {
-        return "soy pikachu y estoy atacando con rayo";
+        return "Soy Pikachu y estoy atacando con Rayo";
     }
 
     /**
-     * Metodo abstracto atacarRayoCarga
-     * @return String
-    */
+     * Realiza el ataque Rayo Carga.
+     * 
+     * @return Descripción del ataque
+     */
     @Override
     public String atacarRayoCarga() {
-         return "soy pikachu y estoy atacando con rayo de carga";
+        return "Soy Pikachu y estoy atacando con Rayo Carga";
     }
 }

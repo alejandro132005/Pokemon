@@ -1,34 +1,39 @@
 package autonoma.pokemon.models;
 
 /**
- * Modelo que permite representar un pokemon de agua
+ * Modelo que permite representar un pokemon de agua.
+ * Representa los ataques caracteristicos de los pokemon de tipo agua.
+ * 
  * @author Juan Jose
  * @since 20250331
  * @version 1.0
  */
 public interface PokemonAgua {
     /**
-     * Modela el metodo de atacar hidrobomba
-     * @return String 
-    */
+     * Metodo que representa el ataque Hidrobomba.
+     * 
+     * @return Descripcion del ataque Hidrobomba
+     */
     public abstract String atacarHidroBommba();
     
     /**
-     * Modela el metodo de atacar pistola agua
-     * @return String 
-    */
+     * Metodo que representa el ataque Pistola Agua.
+     * 
+     * @return Descripcion del ataque Pistola Agua
+     */
     public abstract String atacarPistolaAgua();
     
     /**
-     * Modela el metodo de atacar burbuja
-     * @return String 
-    */
+     * Metodo que representa el ataque Burbuja.
+     * 
+     * @return Descripcion del ataque Burbuja
+     */
     public abstract String atacarBurbuja();
     
     /**
-     * Modela el metodo de atacar hidropulso
-     * @return String 
-    */
+     * Metodo que representa el ataque Hidropulso.
+     * 
+     * @return Descripcion del ataque Hidropulso
+     */
     public abstract String atacarHidroPulso();
-    
 }

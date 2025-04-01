@@ -1,29 +1,39 @@
 package autonoma.pokemon.models;
+
 /**
- * Modelo que representa un PokemonPlanta
- * @author Juanj Jose 
+ * Modelo que representa un PokemonPlanta.
+ * Define los ataques caracteristicos de los pokemon de tipo planta.
+ * 
+ * @author Juan Jose
  * @since 20250331
  * @version 1.0
  */
 public interface PokemonPlanta {
     /**
-     * Modela el metodo de atacarParalizar
-     * @return string
-    */
+     * Metodo que representa el ataque Paralizar.
+     * 
+     * @return Descripcion del ataque Paralizar
+     */
     public abstract String atacarParalizar();
+    
     /**
-     * Modela el metodo de atacarDrenaje
-     * @return string
-    */
+     * Metodo que representa el ataque Drenaje.
+     * 
+     * @return Descripcion del ataque Drenaje
+     */
     public abstract String atacarDrenaje();
+    
     /**
-     * Modela el metodo de atacarHojaAfilada
-     * @return string
-    */
+     * Metodo que representa el ataque Hoja Afilada.
+     * 
+     * @return Descripcion del ataque Hoja Afilada
+     */
     public abstract String atacarHojaAfilada();
+    
     /**
-     * Modela el metodo de atacarLatigoCepa
-     * @return string
-    */
+     * Metodo que representa el ataque Latigo Cepa.
+     * 
+     * @return Descripcion del ataque Latigo Cepa
+     */
     public abstract String atacarLatigoCepa();
 }

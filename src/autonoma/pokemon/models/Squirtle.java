@@ -1,14 +1,15 @@
-
 package autonoma.pokemon.models;
 /**
- * Modelo que representa un Pokemon que hereda de Pokemon e implementa PokemonAgua
+ * Modelo que representa un Pokemon que hereda de Pokemon e implementa PokemonAgua.
+ * Representa los ataques y caracteristicas de un Pokemon de tipo agua.
+ * 
  * @author Alejando
  * @since 20250331
  * @version 1.0
  */
 public class Squirtle extends Pokemon implements PokemonAgua {
     /**
-     * Inicializa los atributos de la clase Squirtle
+     * Inicializa los atributos de la clase Squirtle.
      *
      * @param     nombre    
      * @param     numPokedex
@@ -20,7 +21,8 @@ public class Squirtle extends Pokemon implements PokemonAgua {
     }
     
     /**
-     * Metodo abstracto atacarPlacaje
+     * Metodo abstracto atacarPlacaje.
+     * 
      * @return String
     */
     @Override
@@ -29,17 +31,18 @@ public class Squirtle extends Pokemon implements PokemonAgua {
     }
 
     /**
-     * Metodo abstracto atacarArañazo
+     * Metodo abstracto atacarArañazo.
+     * 
      * @return String
     */
     @Override
     public String atacarArañazo() {
        return "soy squirtle y estoy atacando con arañazo";
-        
     }
 
     /**
-     * Metodo abstracto atacarMordisco
+     * Metodo abstracto atacarMordisco.
+     * 
      * @return String
     */
     @Override
@@ -48,7 +51,8 @@ public class Squirtle extends Pokemon implements PokemonAgua {
     }
 
     /**
-     * Metodo abstracto atacarHidroBomba
+     * Metodo abstracto atacarHidroBomba.
+     * 
      * @return String
     */
     @Override
@@ -57,7 +61,8 @@ public class Squirtle extends Pokemon implements PokemonAgua {
     }
 
     /**
-     * Metodo abstracto atacarPistolaAgua
+     * Metodo abstracto atacarPistolaAgua.
+     * 
      * @return String
     */
     @Override
@@ -66,7 +71,8 @@ public class Squirtle extends Pokemon implements PokemonAgua {
     }
 
     /**
-     * Metodo abstracto atacarBurbuja
+     * Metodo abstracto atacarBurbuja.
+     * 
      * @return String
     */
     @Override
@@ -75,7 +81,8 @@ public class Squirtle extends Pokemon implements PokemonAgua {
     }
 
     /**
-     * Metodo abstracto atacarHidroPulso
+     * Metodo abstracto atacarHidroPulso.
+     * 
      * @return String
     */
     @Override

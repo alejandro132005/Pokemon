@@ -1,12 +1,13 @@
-
 package autonoma.pokemon.models;
 /**
  * Modelo que representa un Pokemon que hereda de Pokemon e implementa PokemonFuego
+ * Representa los ataques y caracteristicas de un Pokemon de tipo fuego.
+ * 
  * @author Alejandro
  * @since 20250331
  * @version 1.0
  */
-public class Charmander extends Pokemon implements PokemonFuego{
+public class Charmander extends Pokemon implements PokemonFuego {
     /**
      * Inicializa los atributos de la clase Charmander
      *
@@ -52,7 +53,7 @@ public class Charmander extends Pokemon implements PokemonFuego{
     */
     @Override
     public String atacarPunioFuego() {
-        return "Soy Charmander y ataco con Puño fuego";
+        return "Soy Charmander y ataco con Punio fuego";
     }
 
     /**
@@ -68,7 +69,6 @@ public class Charmander extends Pokemon implements PokemonFuego{
      * Metodo abstracto atacarLanzaLlamas
      * @return String
     */
-    @Override
     public String atacarLanzaLlamas() {
         return "Soy Charmander y ataco con LanzaLlamas";
     }
